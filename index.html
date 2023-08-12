@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title ng-bind="pageTitle"></title>
+
+
+  <link rel="stylesheet" href="assets/Css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    type="text/css">
+  <link rel="stylesheet" href="assets/Css/owl.carousel.min.css" type="text/css">
+  <link rel="stylesheet" href="assets/Css/magnific-popup.css" type="text/css">
+  <link rel="stylesheet" href="assets/Css/slicknav.min.css" type="text/css">
+  <link rel="stylesheet" href="assets/Css/style.css" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+
+  <style>
+    /* .n{
+      opacity: 0.5;
+    } */
+
+    .nav-link:hover {
+      color: #4BE3AC !important;
+    }
+  </style>
+
+<body>
+
+
+  <nav class="header__nav navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container nav-menu">
+      <a class="navbar-brand" href="#"><img src="assets/Images/logo.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#/!">Home</a>
+          </li>
+          <li class="nav-item dropdown gap-3">
+            <a class="nav-link dropdown active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Schedule
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#!leagueschedule">League</a></li>
+              <li><a class="dropdown-item" href="#!tournamentschedule">Tournament</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown gap-3">
+            <a class="nav-link dropdown active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Results
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#!leagueresult">League</a></li>
+              <li><a class="dropdown-item" href="#!tournamentresult">Tournament</a></li>
+            </ul>
+          </li>
+          <li class="nav-item gap-5">
+            <a class="nav-link active" aria-current="page" href="#!playercards">Players</a>
+          </li>
+
+          <li class="nav-item gap-3">
+            <a class="nav-link active" aria-current="page" href="#!contact">Contact</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <div ng-view></div>
+
+
+
+
+
+  <footer class="footer-section set-bg" style="background-image: url(assets/Images/footer\ \(3\).jpg);">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="fs-logo">
+            <div class="logo">
+              <a href="index.html"><img data-cfsrc="img/logo.png" alt="" src="./Specer _ Template_files/logo.png"></a>
+            </div>
+            <ul>
+              <li><i class="fa fa-envelope"></i> Info.abc@gmail.com</li>
+              <li><i class="fa fa-copy"></i> +(92) 12345678</li>
+              <li><i class="fa fa-thumb-tack"></i> 42 Bahria Sreet 133/2 Karachi City, Pakistan</li>
+            </ul>
+            <div class="fs-social">
+              <a href="index.html"><i class="fa fa-facebook"></i></a>
+              <a href="index.html"><i class="fa fa-twitter"></i></a>
+              <a href="index.html"><i class="fa fa-tumblr"></i></a>
+              <a href="index.html"><i class="fa fa-linkedin"></i></a>
+              <a href="index.html"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 offset-lg-1">
+          <div class="fs-widget">
+            <h4>Quick Links</h4>
+            <ul class="fw-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html">Schedule</a></li>
+              <li><a href="index.html">Results</a></li>
+              <li><a href="index.html">Ranking</a></li>
+              <li><a href="index.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright-option">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="co-text">
+              <p>
+                Copyright ©
+                <!-- <script>document.write(new Date().getFullYear());</script>2023 All rights reserved | This template is -->
+                made by <a href="#" style="color: #b5b8be;" target="_blank">Code-Warriors</a>
+              </p>
+            </div>
+            <div class="co-widget">
+              <ul>
+                <li><a href="#">Copyright notification</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="./Specer _ Template_files/jquery-3.3.1.min.js.download"></script>
+  <script src="./Specer _ Template_files/bootstrap.min.js.download"></script>
+  <script src="./Specer _ Template_files/jquery.magnific-popup.min.js.download"></script>
+  <script src="./Specer _ Template_files/jquery.slicknav.js.download"></script>
+  <script src="./Specer _ Template_files/owl.carousel.min.js.download"></script>
+  <script src="./Specer _ Template_files/main.js.download"></script>
+
+  <script async="" src="./Specer _ Template_files/js"></script>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23581568-13');
+  </script>
+  <script defer="" src="./Specer _ Template_files/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854"
+    integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg=="
+    data-cf-beacon="{&quot;rayId&quot;:&quot;7f414279de3021ee&quot;,&quot;token&quot;:&quot;cd0b4b3a733644fc843ef0b185f98241&quot;,&quot;version&quot;:&quot;2023.8.0&quot;,&quot;si&quot;:100}"
+    crossorigin="anonymous"></script>
+
+  <script>
+    let app = angular.module('myApp', ['ngRoute']);
+
+    app.config(function ($routeProvider) {
+      $routeProvider
+        .when('/', {
+          templateUrl: 'home.html',
+          controller: 'homeCtrl'
+        })
+        .when('/contact', {
+          templateUrl: 'contactus.html',
+          controller: 'contactController'
+        })
+        .when('/leagueresult', {
+          templateUrl: 'LeaguePageResult.html',
+          controller: 'leagueresultController'
+        })
+        .when('/leagueschedule', {
+          templateUrl: 'LeaguePageSchedule.html',
+          controller: 'leagueScheduleController'
+        })
+        .when('/tournamentschedule', {
+          templateUrl: 'TournamentShedule.html',
+          controller: 'TournamentSheduleController'
+        })
+
+        .when('/tournamentresult', {
+          templateUrl: 'TournamentPageResult.html',
+          controller: 'TournamentresultController'
+        })
+
+        .when('/playercards', {
+          templateUrl: 'playercards.html',
+          controller: 'playercardsController'
+        })
+        .when('/player/:player_id', {
+          templateUrl: 'player.html',
+          controller: 'playerController'
+        })
+        .otherwise({
+          redirectTo: '/'
+        });
+    });
+
+    app.controller('homeCtrl', function ($scope, $rootScope) {
+      $rootScope.pageTitle = "Home";
+    });
+
+    app.controller('aboutCtrl', function ($scope, $rootScope) {
+      $rootScope.pageTitle = "About";
+    });
+    app.controller('contactController', function ($scope, $rootScope) {
+      $rootScope.pageTitle = "Contact";
+    });
+    app.controller('leagueresultController', function ($scope, $rootScope) {
+      $rootScope.pageTitle = "League Result";
+    });
+
+    app.controller('leagueScheduleController', function ($scope, $rootScope) {
+      $rootScope.pageTitle = "League Schedule";
+    });
+
+    app.controller('TournamentSheduleController', function ($scope, $rootScope) {
+      $rootScope.pageTitle = "Tournament Schedule";
+    });
+
+    app.controller('TournamentresultController', function ($scope, $rootScope) {
+      $rootScope.pageTitle = "Tournament Result";
+    });
+    app.controller('playerController', function ($scope, $rootScope,$routeParams) {
+      $rootScope.pageTitle = "Player Bio";
+
+      const loc = window.location.href;
+      // const url = new URL(loc);
+      // const player_id = url.searchParams.get("player_id");
+      const player_id = $routeParams.player_id;
+      fetch("./assets/js/playerBio.json").then(
+        function (response) {
+          response.json().then(
+            function (res) {
+              const players = res.players;
+              console.log(players);
+              for (let i = 0; i < players.length; i++) {
+                if (player_id == players[i].id) {
+                  document.getElementById("player_name").innerText = players[i].name;
+                  document.getElementById("player_image").src = players[i].image;
+                  document.getElementById("profession").innerText = players[i].profession;
+                  document.getElementById("description").innerText = players[i].description;
+                  document.getElementById("more_description").innerText = players[i].moreDescription;
+                  document.getElementById("card_image1").src = players[i].cardImage1;
+                  document.getElementById("card_image1_heading").innerText = players[i].cardImage1Heading;
+                  document.getElementById("card_image1_description").innerText = players[i].cardImage1Description;
+                  document.getElementById("card_image2").src = players[i].cardImage2;
+                  document.getElementById("card_image2_heading").innerText = players[i].cardImage2Heading;
+                  document.getElementById("card_image2_description").innerText = players[i].cardImage2Description;
+                  document.getElementById("card_image3").src = players[i].cardImage3;
+                  document.getElementById("card_image3_heading").innerText = players[i].cardImage3Heading;
+                  document.getElementById("card_image3_description").innerText = players[i].cardImage3Description;
+
+
+                }
+              }
+            }
+          )
+        }
+      )
+    });
+
+    app.controller('playercardsController', function ($scope, $rootScope) {
+      $rootScope.pageTitle = "Player List";
+
+      fetch('assets/Js/card.json')
+        .then(response => response.json())
+        .then(data => {
+          const cardContainer = document.getElementById('cardContainer');
+
+          data.forEach(item => {
+            console.log(item);
+            const cardCol = document.createElement('div');
+            cardCol.className = 'col-12 col-sm-6 col-md-4 col-lg-4';
+            cardCol.innerHTML = `
+  
+        <a aria-current="page" href="#!player/${item.id}" style="text-decoration:none;">
+          <div class="card-body">
+            <div class="card-group">
+              <div class="card" style="background-color: transparent;">
+                <img src="${item.image}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">${item.title}</h5>
+                  <p class="card-text" style="color-black">${item.club}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+  
+  
+        `;
+
+            cardContainer.appendChild(cardCol);
+          });
+        })
+        .catch(error => {
+          console.error('Error fetching JSON data:', error);
+        });
+    });
+  </script>
+
+
+</body>
+
+</html>

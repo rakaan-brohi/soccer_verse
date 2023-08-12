@@ -1,0 +1,98 @@
+[
+  {
+    "id":0,
+    "title": "Aaron Ramsdale",
+    "club": "ARSENAL",
+    "image": "./Assets/images/player-player-cards/ramsdale.png"
+  },
+  {
+    "id":1,
+    "title": "Kieran Trippier",
+    "club": "NEWCASTLE UNITED",
+    "image": "Assets/images/player-player-cards/trippier.png"
+  },
+  {
+    "id":2,
+    "title": "William Saliba",
+    "club": "ARSENAL",
+    "image": "Assets/images/player-player-cards/saliba.png"
+  },
+  {
+    "id":3,
+    "title": "Rúben Dias",
+    "club": "MANCHESTER CITY",
+    "image": "Assets/images/player-player-cards/ruben-dias.png"
+  },
+  {
+    "id":4,
+    "title": "Oleksandr Zinchenko",
+    "club": "ARSENAL",
+    "image": "Assets/images/player-player-cards/zinchenko.png"
+  },
+  {
+    "id":5,
+    "title": "Kevin De Bruyne",
+    "club": "MANCHESTER CITY",
+    "image": "Assets/images/player-player-cards/debruyne.png"
+  },
+  {
+    "id":6,
+    "title": "Casemiro",
+    "club": "MANCHESTER UNITED",
+    "image": "Assets/images/player-player-cards/casemiro.png"
+  },
+  {
+    "id":7,
+    "title": "Martin Ødegaard",
+    "club": "ARSENAL",
+    "image": "Assets/images/player-player-cards/odegaard.png"
+  },
+  {
+    "id":7,
+    "title": "Bruno Guimarães",
+    "club": "NEWCASTLE UNITED",
+    "image": "Assets/images/player-player-cards/guimaraes.png"
+  },
+  {
+    "id":7,
+    "title": "Mohamed Salah",
+    "club": "LIVERPOOL",
+    "image": "Assets/images/player-player-cards/salah.png"
+  },
+  {
+    "id":7,
+    "title": "Harry Kane",
+    "club": "ARSENAL",
+    "image": "Assets/images/player-player-cards/harry-kane.png"
+  },
+  {
+    "id":7,
+    "title": "Erling Haaland",
+    "club": "MANCHESTER CITY",
+    "image": "Assets/images/player-player-cards/haaland.png"
+  },
+  {
+    "id":7,
+    "title": "Gabriel Martinelli",
+    "club": "ARSENAL",
+    "image": "Assets/images/player-player-cards/martinelli.png"
+  },
+  {
+    "id":7,
+    "title": "Marcus Rashford",
+    "club": "MANCHESTER UNITED",
+    "image": "Assets/images/player-player-cards/rashford.png"
+  },
+  {
+    "id":7,
+    "title": "Bukayo Saka",
+    "club": "ARSENAL",
+    "image": "Assets/images/player-player-cards/bukayo.png"
+  },
+  {
+    "id":7,
+    "title": "Raphaël Varane",
+    "club": "MANCHESTER UNITED",
+    "image": "Assets/images/player-player-cards/varane.png"
+  }
+]
