@@ -74,8 +74,14 @@
           </li>
 
           <li class="nav-item gap-3">
+            <a class="nav-link active" aria-current="page" href="#!rank">Ranking</a>
+          </li>
+
+          <li class="nav-item gap-3">
             <a class="nav-link active" aria-current="page" href="#!contact">Contact</a>
           </li>
+
+          
 
         </ul>
 
@@ -94,7 +100,7 @@
         <div class="col-lg-3 col-md-6">
           <div class="fs-logo">
             <div class="logo">
-              <a href="index.html"><img data-cfsrc="img/logo.png" alt="" src="./Specer _ Template_files/logo.png"></a>
+              <a href="index.html"><img data-cfsrc="img/logo.png" alt="" src=""></a>
             </div>
             <ul>
               <li><i class="fa fa-envelope"></i> Info.abc@gmail.com</li>
@@ -120,6 +126,15 @@
               <li><a href="index.html">Ranking</a></li>
               <li><a href="index.html">Contact Us</a></li>
             </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="fs-widget">
+            <h4>Your Feedback</h4>
+            <textarea name="Feedback" id="" cols="30" rows="2">
+              
+            </textarea>
+            <span class="btn btn-success mb-5 w-25">Submit</span>
           </div>
         </div>
           </div>
@@ -153,14 +168,7 @@
 
 
 
-  <script src="./Specer _ Template_files/jquery-3.3.1.min.js.download"></script>
-  <script src="./Specer _ Template_files/bootstrap.min.js.download"></script>
-  <script src="./Specer _ Template_files/jquery.magnific-popup.min.js.download"></script>
-  <script src="./Specer _ Template_files/jquery.slicknav.js.download"></script>
-  <script src="./Specer _ Template_files/owl.carousel.min.js.download"></script>
-  <script src="./Specer _ Template_files/main.js.download"></script>
-
-  <script async="" src="./Specer _ Template_files/js"></script>
+  
 
 
 
@@ -213,10 +221,16 @@
           templateUrl: 'playercards.html',
           controller: 'playercardsController'
         })
+        
+        .when('/rank', {
+          templateUrl: 'table.html',
+          controller: 'rankController'
+        })
         .when('/player/:player_id', {
           templateUrl: 'player.html',
           controller: 'playerController'
         })
+        
         .otherwise({
           redirectTo: '/'
         });
@@ -247,6 +261,270 @@
     app.controller('TournamentresultController', function ($scope, $rootScope) {
       $rootScope.pageTitle = "Tournament Result";
     });
+    
+    app.controller('rankController', function ($scope, $rootScope) {
+      $rootScope.pageTitle = "Player Ranking";
+
+      
+  
+    const response = {
+      "ranking": [
+        {
+          "NO": 1,
+          "NAME": "William Saliba",
+          "POS": "CB",
+          "PAC": 87,
+          "SHO": 53,
+          "PAS": 81,
+          "DRI": 85,
+          "DEF": 92,
+          "PHY": 91,
+          "RANK": 92,
+        },
+        {
+          "NO": 2,
+          "NAME": "Kieran Trippier",
+          "POS": "RB",
+          "PAC": 90,
+          "SHO": 73,
+          "PAS": 93,
+          "DRI": 87,
+          "DEF": 87,
+          "PHY": 81,
+          "RANK": 92,
+        },
+        {
+          "NO": 3,
+          "NAME": "Rúben Dias",
+          "POS": "CB",
+          "PAC": 88,
+          "SHO": 48,
+          "PAS": 83,
+          "DRI": 83,
+          "DEF": 97,
+          "PHY": 97,
+          "RANK": 96,
+        },
+        {
+          "NO": 4,
+          "NAME": "Oleksandr Zinchenko",
+          "POS": "LB",
+          "PAC": 91,
+          "SHO": 82,
+          "PAS": 92,
+          "DRI": 92,
+          "DEF": 88,
+          "PHY": 83,
+          "RANK": 92,
+        },
+        {
+          "NO": 5,
+          "NAME": "Kevin De Bruyne",
+          "POS": "CM",
+          "PAC": 84,
+          "SHO": 92,
+          "PAS": 99,
+          "DRI": 95,
+          "DEF": 85,
+          "PHY": 87,
+          "RANK": 97,
+        },
+        {
+          "NO": 6,
+          "NAME": "Casemiro",
+          "POS": "CDM",
+          "PAC": 84,
+          "SHO": 80,
+          "PAS": 82,
+          "DRI": 80,
+          "DEF": 92,
+          "PHY": 97,
+          "RANK": 94,
+        },
+        {
+          "NO": 7,
+          "NAME": "Martin Ødegaard",
+          "POS": "CM",
+          "PAC": 90,
+          "SHO": 87,
+          "PAS": 94,
+          "DRI": 91,
+          "DEF": 70,
+          "PHY": 72,
+          "RANK": 92,
+        },
+        {
+          "NO": 8,
+          "NAME": "Bruno Guimarães",
+          "POS": "CM",
+          "PAC": 85,
+          "SHO": 85,
+          "PAS": 92,
+          "DRI": 93,
+          "DEF": 90,
+          "PHY": 92,
+          "RANK": 93,
+        },
+        {
+          "NO": 9,
+          "NAME": "Mohamed Salah",
+          "POS": "RW",
+          "PAC": 96,
+          "SHO": 95,
+          "PAS": 90,
+          "DRI": 97,
+          "DEF": 54,
+          "PHY": 83,
+          "RANK": 96,
+        },
+        {
+          "NO": 10,
+          "NAME": "Harry Kane",
+          "POS": "ST",
+          "PAC": 90,
+          "SHO": 98,
+          "PAS": 92,
+          "DRI": 90,
+          "DEF": 53,
+          "PHY": 92,
+          "RANK": 95,
+        },
+        {
+          "NO": 11,
+          "NAME": "Erling Haaland",
+          "POS": "ST",
+          "PAC": 97,
+          "SHO": 97,
+          "PAS": 82,
+          "DRI": 90,
+          "DEF": 61,
+          "PHY": 95,
+          "RANK": 97,
+        },
+        {
+          "NO": 12,
+          "NAME": "Gabriel Martinelli",
+          "POS": "LW",
+          "PAC": 98,
+          "SHO": 87,
+          "PAS": 86,
+          "DRI": 96,
+          "DEF": 68,
+          "PHY": 87,
+          "RANK": 93,
+        },
+        {
+          "NO": 13,
+          "NAME": "Marcus Rashford",
+          "POS": "LW",
+          "PAC": 99,
+          "SHO": 95,
+          "PAS": 92,
+          "DRI": 95,
+          "DEF": 56,
+          "PHY": 89,
+          "RANK": 95,
+        },
+        {
+          "NO": 14,
+          "NAME": "Bukayo Saka",
+          "POS": "RW",
+          "PAC": 96,
+          "SHO": 90,
+          "PAS": 90,
+          "DRI": 94,
+          "DEF": 76,
+          "PHY": 82,
+          "RANK": 93,
+        },
+        {
+          "NO": 15,
+          "NAME": "Raphaël Varane",
+          "POS": "CB",
+          "PAC": 90,
+          "SHO": 58,
+          "PAS": 73,
+          "DRI": 82,
+          "DEF": 95,
+          "PHY": 93,
+          "RANK": 94,
+        }
+      ]
+    }
+
+    const tableContent = document.getElementById("table-content")
+    const tableButtons = document.querySelectorAll("th button");
+
+    const createRow = (obj) => {
+      const row = document.createElement("tr");
+      const objKeys = Object.keys(obj);
+      objKeys.map((key) => {
+        const cell = document.createElement("td");
+        cell.setAttribute("data-attr", key);
+        cell.innerHTML = obj[key];
+        row.appendChild(cell);
+      });
+      return row;
+    };
+
+    const getTableContent = (data) => {
+      data.map((obj) => {
+        const row = createRow(obj);
+        tableContent.appendChild(row);
+      });
+    };
+
+    const sortData = (data, param, direction = "asc") => {
+      tableContent.innerHTML = '';
+      const sortedData =
+        direction == "asc"
+          ? [...data].sort(function (a, b) {
+            if (a[param] < b[param]) {
+              return -1;
+            }
+            if (a[param] > b[param]) {
+              return 1;
+            }
+            return 0;
+          })
+          : [...data].sort(function (a, b) {
+            if (b[param] < a[param]) {
+              return -1;
+            }
+            if (b[param] > a[param]) {
+              return 1;
+            }
+            return 0;
+          });
+
+      getTableContent(sortedData);
+    };
+
+    const resetButtons = (event) => {
+      [...tableButtons].map((button) => {
+        if (button !== event.target) {
+          button.removeAttribute("data-dir");
+        }
+      });
+    };
+    getTableContent(response.ranking);
+
+[...tableButtons].map((button) => {
+  button.addEventListener("click", (e) => {
+    resetButtons(e);
+    if (e.target.getAttribute("data-dir") == "desc") {
+      sortData(response.ranking, e.target.id, "desc");
+      e.target.setAttribute("data-dir", "asc");
+    } else {
+      sortData(response.ranking, e.target.id, "asc");
+      e.target.setAttribute("data-dir", "desc");
+    }
+  });
+});
+
+  
+    });
+
     app.controller('playerController', function ($scope, $rootScope,$routeParams) {
       $rootScope.pageTitle = "Player Bio";
 
@@ -254,7 +532,7 @@
       // const url = new URL(loc);
       // const player_id = url.searchParams.get("player_id");
       const player_id = $routeParams.player_id;
-      console.log(player_id);
+      console.log(player_id)
       fetch("assets/js/playerBio.json").then(
         function (response) {
           response.json().then(
