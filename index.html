@@ -289,7 +289,7 @@
     app.controller('playercardsController', function ($scope, $rootScope) {
       $rootScope.pageTitle = "Player List";
 
-      fetch('assets/Js/card.json')
+      fetch('assets/js/card.json')
         .then(response => response.json())
         .then(data => {
           const cardContainer = document.getElementById('cardContainer');
