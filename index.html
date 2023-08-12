@@ -254,7 +254,8 @@
       // const url = new URL(loc);
       // const player_id = url.searchParams.get("player_id");
       const player_id = $routeParams.player_id;
-      fetch("./assets/js/playerBio.json").then(
+      console.log(player_id);
+      fetch("assets/js/playerBio.json").then(
         function (response) {
           response.json().then(
             function (res) {
